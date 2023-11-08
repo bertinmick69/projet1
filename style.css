@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/************header***************/
+i {
+  color: #e6d8c0;
+}
+header {
+  color: #e6d8c0;
+}
+#top-page {
+  display: flex;
+  justify-content: space-between;
+  background-color: #3a3b2e;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  width: 200px;
+  justify-content: space-between;
+  padding: 0px 40px 0px 40px;
+}
+nav {
+  display: flex;
+}
+
+#back-imge {
+  background-image: url("/Herobanner-C.webp");
+  height: 200px;
+  background-size: 100% 100%;
+}
+
+button {
+  background-color: #e6d8c0;
+  padding: 5px;
+  border: 0;
+}
+/************(main)***************/
