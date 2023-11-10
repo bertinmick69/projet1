@@ -3,8 +3,9 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
-/************(header logo)***************/
+/****************************************************************(header logo)****************************************/
 i {
   color: #e6d8c0;
 }
@@ -15,8 +16,9 @@ header {
   display: flex;
   justify-content: space-between;
   background-color: #3a3b2e;
+  flex-wrap: wrap;
 }
-/******(nav)********/
+/***************************************************************(nav)**************************************************/
 ul {
   list-style: none;
   display: flex;
@@ -28,40 +30,108 @@ ul {
 nav {
   display: flex;
 }
-/***********(  header photo +  text )**********/
+/******************************************************(  header photo +  text )***************************************/
 #back-imge {
   background-image: url("/img/Header.webp");
   height: 200px;
   background-size: 100% 100%;
 }
-
 button {
   background-color: #e6d8c0;
   padding: 5px;
   border: 0;
   font-size: 30px;
 }
-/************(main)***************/
-/*************(parti mobil)*******************/
-@media screen and (max-width: 320px) {
-  .parti-1 {
-    text-align: center;
-    margin: 0px 35px 0px 35px;
-  }
-  .parti-1 > p {
-    font-size: 15px;
-    color: aqua;
-    text-align: center;
-    padding: 50px;
-  }
-  button {
-    margin: 0px 20px 25px 0px;
-  }
-  nav {
+/***********************************************************(main)**************************************************/
+
+img {
+  width: 200px;
+}
+
+#produit {
+  background-color: #e4d0b2;
+}
+
+.next {
+  display: none;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.card-1 div {
+  text-align: center;
+  border: solid black 2px;
+  margin-top: 15px;
+}
+.card-1 article {
+  border: solid black 2px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/********************************************************************(parti mobil)*****************************************/
+@media screen and (max-width: 425px) {
+  img {
     display: none;
   }
-  #back-imge {
-    height: auto;
-    background-size: 100% 100%;
+  #produit {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .card {
+    padding-top: 20px;
+  }
+  .card-1 {
+    display: none;
+  }
+  .active {
+    display: block;
+    width: 300px;
+    height: 300px;
+    margin: 0px;
+    padding: 0;
+  }
+  p {
+    display: none;
+  }
+
+  .container p {
+    display: block;
+  }
+  .next {
+    display: block;
+    display: flex;
+    position: relative;
+    top: 50%;
+  }
+  .material-symbols-outlined {
+    cursor: pointer;
+  }
+  .left {
+    width: 174px;
+    cursor: pointer;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    border: solid black 2px;
+    width: 200px;
+  }
+  .card1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 285px;
   }
 }
