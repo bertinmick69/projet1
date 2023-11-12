@@ -42,18 +42,15 @@ button {
   border: 0;
   font-size: 30px;
 }
-/***********************************************************(main)**************************************************/
-
+/***************************************************(main)**************************************************/
+/***************************************************(card)**************************************************/
 img {
   width: 200px;
+  height: 200px;
 }
 
-#produit {
+#container-card {
   background-color: #e4d0b2;
-}
-
-.next {
-  display: none;
 }
 
 .card {
@@ -62,25 +59,32 @@ img {
   justify-content: space-around;
   align-items: center;
   width: 100%;
+  margin-top: 30px;
+  margin-bottom: 60px;
 }
-.card-1 div {
-  text-align: center;
-  border: solid black 2px;
-  margin-top: 15px;
-}
-.card-1 article {
-  border: solid black 2px;
-  height: 50px;
+
+.container {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  height: 60px;
+  background-color: #f1e3cf;
+  width: 200px;
+  margin-top: 30px;
+  cursor: pointer;
 }
-/********************************************************************(parti mobil)*****************************************/
+.container:hover {
+  border: black solid 2px;
+  background-color: aqua;
+}
+
+/*************************************************(parti mobil)*****************************************/
 @media screen and (max-width: 425px) {
   img {
     display: none;
   }
-  #produit {
+  #container-card {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -117,7 +121,6 @@ img {
   }
   .left {
     width: 174px;
-    cursor: pointer;
   }
   .container {
     display: flex;
@@ -125,13 +128,37 @@ img {
     justify-content: center;
     align-items: center;
     height: 60px;
-    border: solid black 2px;
     width: 200px;
+    margin-top: 30px;
+    cursor: pointer;
   }
   .card1 {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 285px;
+  }
+  .left {
+    font-size: 30px;
+  }
+  .right {
+    font-size: 30px;
+    margin: 0px;
+    padding-left: 77px;
+  }
+  i {
+    color: #e4d0b2;
+    background-color: #f1e3cf;
+    border: none;
+    cursor: pointer;
+  }
+  .sens {
+    display: flex;
+    position: relative;
+    top: -150px;
+    width: 281px;
+  }
+  i:hover {
+    background-color: aqua;
   }
 }
