@@ -2,10 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
+
 /************ Aleks header ***************/
  
-
 header {
     background-color: #3a3b2e; 
     color: #e6d8c0; 
@@ -15,14 +17,6 @@ header {
     align-items: center;
     font-family: 'Wendy One', sans-serif;
 }
-
-   
-
-.logo {
-    font-size: 40px; 
-    margin-left: 10px; 
-}
-
 
 /**********Aleks navbar ******/
 
@@ -91,6 +85,7 @@ header {
   color: #3a3b2e;
   font-family: 'Roboto', sans-serif;
   position: relative;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -109,20 +104,127 @@ header {
 
 }
 
-.content-container h1 {
+/***************************************************(main)**************************************************/
+/***************************************************(card)**************************************************/
+img {
+  width: 200px;
+  height: 200px;
+}
+
+#container-card {
+  background-color: #e4d0b2;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background-color: #f1e3cf;
+  width: 200px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.container:hover {
+  border: black solid 2px;
+  background-color: aqua;
+}
+
+/*************************************************(parti mobil)*****************************************/
+@media screen and (max-width: 425px) {
+  img {
+    display: none;
+  }
+  #container-card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .card {
+    padding-top: 20px;
+  }
+  .card-1 {
+    display: none;
+  }
+  .active {
+    display: block;
+    width: 300px;
+    height: 300px;
+    margin: 0px;
+    padding: 0;
+  }
+  p {
+    display: none;
+  }
+
+  .container p {
+    display: block;
+  }
+  .next {
+    display: block;
+    display: flex;
+    position: relative;
+    top: 50%;
+  }
+  .material-symbols-outlined {
+    cursor: pointer;
+  }
+  .left {
+    width: 174px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 200px;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+  .card1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 285px;
+  }
+  .left {
     font-size: 30px;
-    margin-bottom: 25px;
-
+  }
+  .right {
+    font-size: 30px;
+    margin: 0px;
+    padding-left: 77px;
+  }
+  i {
+    color: #e4d0b2;
+    background-color: #f1e3cf;
+    border: none;
+    cursor: pointer;
+  }
+  .sens {
+    display: flex;
+    position: relative;
+    top: -150px;
+    width: 281px;
+  }
+  i:hover {
+    background-color: aqua;
+  }
 }
-
-.content-container h2 {
-    font-size: 25px;
-    font-weight: 100;
-    padding: 0,5rem;
-    
-}
-
-button {
+=======
     background-color: #e6d8c0;
     color: #3a3b2e;
     border: none;
@@ -136,12 +238,6 @@ button:hover { /*change la couleur quand on clique dessus */
     background-color: #e6d8c0;
     color: white;
 } 
-
-
-  
-/************ main ***************/
-
-
 
 
 /************Aleks footer ***************/
@@ -247,3 +343,4 @@ footer {
             grid-template-columns:350px 350px;
           }
     }
+
