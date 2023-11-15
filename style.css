@@ -5,27 +5,84 @@
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
 }
-/****************************************************************(header logo)****************************************/
-i {
-  color: #e6d8c0;
-}
+
+/************ Aleks header ***************/
+
 header {
+  background-color: #3a3b2e;
+  color: #e6d8c0;
+  padding: 5px 10px 10px; /* espace interne du header */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Wendy One", sans-serif;
+}
+
+/**********Aleks navbar ******/
+
+.navigation {
+  list-style: none; /* suppr puces */
+  display: flex;
+}
+
+.navigation li {
+  margin: 30px;
+  font-size: 20px;
+}
+
+.navigation a {
+  text-decoration: none;
   color: #e6d8c0;
 }
-#top-page {
-  display: flex;
-  justify-content: space-between;
-  background-color: #3a3b2e;
-  flex-wrap: wrap;
+
+.navigation a:hover {
+  color: #fff; /* quand on clic dessus la couleur change */
 }
-/***************************************************************(nav)**************************************************/
-ul {
-  list-style: none;
+
+.icons {
+  cursor: pointer;
   display: flex;
   align-items: center;
-  width: 200px;
-  justify-content: space-between;
-  padding: 0px 40px 0px 40px;
+  gap: 10px;
+  scale: 1.2;
+}
+.icons a:hover {
+  color: #fff; /* quand on clic dessus la couleur change */
+}
+
+/************Aleks media queries icones ***************/
+
+.content-section {
+  background-image: url(img/Header.jpg);
+  background-size: 100% 100%; /*img reduit*/
+  background-position: center;
+  text-align: center;
+  padding: 100px 0;
+  color: #3a3b2e;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+
+/************Aleks section (mobil) ***************/
+/*@media screen and (max-width: 320px) {*/
+.content-section {
+  background-image: url(img/Header.jpg);
+  background-size: 100% 100%; /*img reduit*/
+  background-position: center;
+  text-align: center;
+  padding: 100px 0;
+  color: #3a3b2e;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
 }
 nav {
   display: flex;
@@ -42,8 +99,8 @@ button {
   border: 0;
   font-size: 30px;
 }
-/***************************************************(main)**************************************************/
-/***************************************************(card)**************************************************/
+/***********************************************************(main)**************************************************/
+
 img {
   width: 200px;
   height: 200px;
@@ -137,28 +194,5 @@ img {
     flex-direction: column;
     align-items: center;
     width: 285px;
-  }
-  .left {
-    font-size: 30px;
-  }
-  .right {
-    font-size: 30px;
-    margin: 0px;
-    padding-left: 77px;
-  }
-  i {
-    color: #e4d0b2;
-    background-color: #f1e3cf;
-    border: none;
-    cursor: pointer;
-  }
-  .sens {
-    display: flex;
-    position: relative;
-    top: -150px;
-    width: 281px;
-  }
-  i:hover {
-    background-color: aqua;
   }
 }
