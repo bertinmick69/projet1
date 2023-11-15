@@ -5,43 +5,105 @@
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
 }
-/****************************************************************(header logo)****************************************/
-i {
-  color: #e6d8c0;
-}
+
+/************ Aleks header ***************/
+ 
 header {
-  color: #e6d8c0;
+    background-color: #3a3b2e; 
+    color: #e6d8c0; 
+    padding: 5px 10px 10px; /* espace interne du header */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Wendy One', sans-serif;
 }
-#top-page {
-  display: flex;
-  justify-content: space-between;
-  background-color: #3a3b2e;
-  flex-wrap: wrap;
+
+/**********Aleks navbar ******/
+
+.navigation {
+    list-style: none; /* suppr puces */
+    display: flex; 
+   
 }
-/***************************************************************(nav)**************************************************/
-ul {
-  list-style: none;
+
+.navigation li {
+    margin: 30px;
+    font-size: 20px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #e6d8c0;
+}
+
+.navigation a:hover {
+    color: #fff; /* quand on clic dessus la couleur change */
+}
+
+.icons {
+    
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    scale: 1.2;
+
+
+}
+.icons a:hover {
+    color: #fff; /* quand on clic dessus la couleur change */
+}
+
+/************Aleks media queries icones ***************/
+
+
+.content-section {
+    background-image: url(img/Header.jpg); 
+    background-size: 100% 100%; /*img reduit*/
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+    color: #3a3b2e;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+  
+  }
+
+
+/************Aleks section (mobil) ***************/
+/*@media screen and (max-width: 320px) {*/
+  .content-section {
+  background-image: url(img/Header.jpg); 
+  background-size: 100% 100%; /*img reduit*/
+  background-position: center;
+  text-align: center;
+  padding: 100px 0;
+  color: #3a3b2e;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+
   display: flex;
+  justify-content: center;
   align-items: center;
-  width: 200px;
-  justify-content: space-between;
-  padding: 0px 40px 0px 40px;
+  height: 30vh;
+
 }
-nav {
-  display: flex;
+
+
+.content-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+    position:relative;
+
 }
-/******************************************************(  header photo +  text )***************************************/
-#back-imge {
-  background-image: url("/img/Header.webp");
-  height: 200px;
-  background-size: 100% 100%;
-}
-button {
-  background-color: #e6d8c0;
-  padding: 5px;
-  border: 0;
-  font-size: 30px;
-}
+
 /***************************************************(main)**************************************************/
 /***************************************************(card)**************************************************/
 img {
@@ -162,3 +224,123 @@ img {
     background-color: aqua;
   }
 }
+=======
+    background-color: #e6d8c0;
+    color: #3a3b2e;
+    border: none;
+    padding: 10px; 
+    font-size: 30px; 
+    margin-top: 20px;
+    cursor: pointer; /*chage de courseur */
+}
+
+button:hover { /*change la couleur quand on clique dessus */
+    background-color: #e6d8c0;
+    color: white;
+} 
+
+
+/************Aleks footer ***************/
+
+.container {
+     /*mettre les element en ligne*/
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px;
+    gap: 30px; /*espacer  les elements*/
+    justify-content: space-evenly;
+    background-color: #e4BE86;
+}
+
+#item_0, #item_2, #item_4  {
+
+font-family: "Roboto";
+font-weight: Bold;
+color: black;
+font-size: 17px;
+text-align: center;
+padding: 20px;
+
+}
+
+#item_1, #item_3, #item_5 {
+    color: #3a3b2e;
+    max-width: 100%; /* pour que l'image ne dépasse pas de sa boîte */
+    text-align: center;
+    padding: 20px;
+    
+}
+
+footer {
+     font-size: 1rem;
+     padding: 0.1rem;
+     background-color:#3a3b2e;
+     color: #e6d8c0;
+     text-align: center;
+     display: grid;
+     grid-template-columns: 500px 500px;
+     justify-content: space-between;
+     align-items: center;
+     align-content: center;
+     font-family: 'Roboto', sans-serif;
+
+    }
+
+#social_icon {
+    cursor: pointer;
+    padding: 10px;
+   
+}
+
+
+/************ mobil **************/
+@media screen and (max-width: 767px) {
+    /*******header*********/
+        .logo {
+          font-size: 30px;
+        }
+      
+        .navigation li {
+          margin: 20px;
+          font-size: 18px;
+        }
+      
+        .icons {
+          gap: 8px;
+          font-size: 20px;
+        }
+        .content-section {
+            height: 25vh;
+          }
+        
+          .content-container h1 {
+            font-size: 25px;
+            margin-bottom: 20px;
+          }
+        
+          .content-container h2 {
+            font-size: 20px;
+          }
+        
+          button {
+            font-size: 25px;
+          }
+    
+          /*******footer*********/
+          .container {
+            grid-template-columns: 50px 50px 50px 50px 50px 50px;
+          }
+        
+          #item_0, #item_2, #item_4 {
+            font-size: 15px;
+          }
+        
+          #item_1, #item_3, #item_5 {
+            padding: 10px;
+          }
+        
+          footer {
+            font-size: 0.80rem;
+            grid-template-columns:350px 350px;
+          }
+    }
+
