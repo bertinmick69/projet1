@@ -14,13 +14,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: 'Wendy One', sans-serif;
+    
 }
 
    
 .logo {
     font-size: 40px; 
     margin-left: 10px; 
+    font-family: 'Wendy One', sans-serif;
 }
 /**********Aleks navbar ******/
 
@@ -73,7 +74,7 @@ header {
 /************Aleks header ***************/
 
 .content-section {
-  background-image: url(img/Header.jpg);
+  background-image: url(/img/Header.jpg);
   background-size: 100% 100%; /*img reduit*/
   background-position: center;
   text-align: center;
