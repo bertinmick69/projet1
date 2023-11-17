@@ -6,107 +6,16 @@
   overflow-x: hidden;
 }
 
-/************ Aleks header ***************/
-
-header {
-  background-color: #3a3b2e;
-  color: #e6d8c0;
-  padding: 5px 10px 10px; /* espace interne du header */
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-family: "Wendy One", sans-serif;
-}
-
-/**********Aleks navbar ******/
-
-.navigation {
-  list-style: none; /* suppr puces */
-  display: flex;
-}
-
-.navigation li {
-  margin: 30px;
-  font-size: 20px;
-}
-
-.navigation a {
-  text-decoration: none;
-  color: #e6d8c0;
-}
-
-.navigation a:hover {
-  color: #fff; /* quand on clic dessus la couleur change */
-}
-
-.icons {
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  scale: 1.2;
-}
-.icons a:hover {
-  color: #fff; /* quand on clic dessus la couleur change */
-}
-
-/************Aleks media queries icones ***************/
-
-.content-section {
-  background-image: url(img/Header.jpg);
-  background-size: 100% 100%; /*img reduit*/
-  background-position: center;
-  text-align: center;
-  padding: 100px 0;
-  color: #3a3b2e;
-  font-family: "Roboto", sans-serif;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 30vh;
-}
-
-/************Aleks section (mobil) ***************/
-/*@media screen and (max-width: 320px) {*/
-.content-section {
-  background-image: url(img/Header.jpg);
-  background-size: 100% 100%; /*img reduit*/
-  background-position: center;
-  text-align: center;
-  padding: 100px 0;
-  color: #3a3b2e;
-  font-family: "Roboto", sans-serif;
-  position: relative;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 30vh;
-}
-nav {
-  display: flex;
-}
-/******************************************************(  header photo +  text )***************************************/
-#back-imge {
-  background-image: url("/img/Header.webp");
-  height: 200px;
-  background-size: 100% 100%;
-}
-button {
-  background-color: #e6d8c0;
-  padding: 5px;
-  border: 0;
-  font-size: 30px;
-}
 /***********************************************************(main)**************************************************/
-
+#produit {
+  background-color: #e4d0b2;
+}
 img {
   width: 200px;
   height: 200px;
 }
 
-#container-card {
+#containers-card {
   background-color: #e4d0b2;
 }
 
@@ -120,7 +29,7 @@ img {
   margin-bottom: 60px;
 }
 
-.container {
+.containers {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -130,18 +39,58 @@ img {
   width: 200px;
   margin-top: 30px;
   cursor: pointer;
-}
-.container:hover {
   border: black solid 2px;
-  background-color: aqua;
 }
 
+.containers:hover {
+  background-color: aqua;
+}
+.sens {
+  display: none;
+}
+/******************************(section 2 mick)***********************************************************/
+#section2 {
+  background-color: #f1e3cf;
+  display: flex;
+  justify-content: center;
+  width: auto;
+}
+.img01 > img {
+  overflow-x: visible;
+}
+.img01 {
+  display: flex;
+  overflow-x: visible;
+
+  align-items: center;
+}
+
+.imtex > p {
+  width: 700px;
+  height: 150px;
+  text-wrap: wrap;
+}
+
+/******************************( parti tablette mick)***********************************************************/
+@media screen and (max-width: 768px) {
+  .imtex {
+  }
+  .img01 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
 /*************************************************(parti mobil)*****************************************/
 @media screen and (max-width: 425px) {
+  #section2 {
+    display: none;
+  }
   img {
     display: none;
   }
-  #container-card {
+  #containers-card {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -164,7 +113,7 @@ img {
     display: none;
   }
 
-  .container p {
+  .containers p {
     display: block;
   }
   .next {
@@ -179,7 +128,7 @@ img {
   .left {
     width: 174px;
   }
-  .container {
+  .containers {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -194,5 +143,38 @@ img {
     flex-direction: column;
     align-items: center;
     width: 285px;
+  }
+
+  .left {
+    font-size: 30px;
+  }
+  .right {
+    font-size: 30px;
+    margin: 0px;
+    padding-left: 77px;
+  }
+  i {
+    color: #e4d0b2;
+    background-color: #f1e3cf;
+    border: none;
+    cursor: pointer;
+  }
+  .sens {
+    display: flex;
+    position: relative;
+    top: -150px;
+    width: 281px;
+  }
+  i:hover {
+    background-color: aqua;
+  }
+  i {
+    background-color: #e6d8c0;
+    color: #3a3b2e;
+    border: none;
+    padding: 10px;
+    font-size: 30px;
+    margin-top: 20px;
+    cursor: pointer;
   }
 }
