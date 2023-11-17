@@ -9,104 +9,131 @@
 /************ Aleks header ***************/
 
 header {
-  background-color: #3a3b2e;
-  color: #e6d8c0;
+  background-color: #3a3b2e; 
+  color: #e6d8c0; 
   padding: 5px 10px 10px; /* espace interne du header */
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  font-family: "Wendy One", sans-serif;
+  font-family: 'Wendy One', sans-serif;
 }
 
+ 
+.logo {
+  font-size: 40px; 
+  margin-left: 10px; 
+}
 /**********Aleks navbar ******/
-
-.navigation {
-  list-style: none; /* suppr puces */
-  display: flex;
-}
-
-.navigation li {
-  margin: 30px;
-  font-size: 20px;
-}
-
-.navigation a {
-  text-decoration: none;
-  color: #e6d8c0;
-}
-
-.navigation a:hover {
-  color: #fff; /* quand on clic dessus la couleur change */
-}
 
 .icons {
   cursor: pointer;
+  color: #e6d8c0;
   display: flex;
+  text-decoration: none;
   align-items: center;
   gap: 10px;
-  scale: 1.2;
+  transform: scale(1.2);
+  padding: 20px;
+  
 }
 .icons a:hover {
   color: #fff; /* quand on clic dessus la couleur change */
 }
 
-/************Aleks media queries icones ***************/
+/*ul {
+  display:block;
+  position: relative;
+  background-color: #3a3b2e;
+  padding: 10px;
+  top: 100%; /* ajuster le top par rapport au height 
+  left: 0;
+  
+  
+
+}
+
+.icons:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  color: #e6d8c0;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  overflow: hidden;
+  
+
+}
+
+.dropdown-menu a:hover {
+  background-color: #ffffff;
+}
+*/
+
+/************Aleks header ***************/
 
 .content-section {
-  background-image: url(img/Header.jpg);
-  background-size: 100% 100%; /*img reduit*/
-  background-position: center;
-  text-align: center;
-  padding: 100px 0;
-  color: #3a3b2e;
-  font-family: "Roboto", sans-serif;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 30vh;
+background-image: url(img/Header.jpg);
+background-size: 100% 100%; /*img reduit*/
+background-position: center;
+text-align: center;
+padding: 100px 20px;
+color: #3a3b2e;
+font-family: "Roboto", sans-serif;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+height: 30vh;
+
 }
 
-/************Aleks section (mobil) ***************/
-/*@media screen and (max-width: 320px) {*/
-.content-section {
-  background-image: url(img/Header.jpg);
-  background-size: 100% 100%; /*img reduit*/
-  background-position: center;
-  text-align: center;
-  padding: 100px 0;
-  color: #3a3b2e;
-  font-family: "Roboto", sans-serif;
-  position: relative;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 30vh;
+.content-container h1 {
+  font-size: 30px;
+  margin-bottom: 25px;
+  align-self: flex-start;
+
 }
-nav {
-  display: flex;
+
+.content-container h3 {
+  font-size: 25px;
+  font-weight: 100;
+
+  
+  
 }
-/******************************************************(  header photo +  text )***************************************/
-#back-imge {
-  background-image: url("/img/Header.webp");
-  height: 200px;
-  background-size: 100% 100%;
-}
+
 button {
   background-color: #e6d8c0;
-  padding: 5px;
-  border: 0;
-  font-size: 30px;
+  color: #3a3b2e;
+  border: 1px;
+  border-radius: 30px;
+  padding: 10px; 
+  font-size: 30px; 
+  margin-top: 20px;
+  cursor: pointer; /*chage de courseur */
+  align-self: flex-start;
 }
-/***********************************************************(main)**************************************************/
 
+button:hover { /*change la couleur quand on clique dessus */
+  background-color: #e6d8c0;
+  border:#3a3b2e ;
+  background-color: #e4BE86 ;
+  transform: scale(1.05); /*bouton s'agrandi*/
+
+} 
+/***********************************************************(main)**************************************************/
+#produit {
+  background-color: #e4d0b2;
+}
 img {
   width: 200px;
   height: 200px;
 }
 
-#container-card {
+#containers-card {
   background-color: #e4d0b2;
 }
 
@@ -120,7 +147,7 @@ img {
   margin-bottom: 60px;
 }
 
-.container {
+.containers {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -130,18 +157,58 @@ img {
   width: 200px;
   margin-top: 30px;
   cursor: pointer;
-}
-.container:hover {
   border: black solid 2px;
-  background-color: aqua;
 }
 
+.containers:hover {
+  background-color: aqua;
+}
+.sens {
+  display: none;
+}
+/******************************(section 2 mick)***********************************************************/
+#section2 {
+  background-color: #f1e3cf;
+  display: flex;
+  justify-content: center;
+  width: auto;
+}
+.img01 > img {
+  overflow-x: visible;
+}
+.img01 {
+  display: flex;
+  overflow-x: visible;
+
+  align-items: center;
+}
+
+.imtex > p {
+  width: 700px;
+  height: 150px;
+  text-wrap: wrap;
+}
+
+/******************************( parti tablette mick)***********************************************************/
+@media screen and (max-width: 768px) {
+  .imtex {
+  }
+  .img01 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
 /*************************************************(parti mobil)*****************************************/
 @media screen and (max-width: 425px) {
+  #section2 {
+    display: none;
+  }
   img {
     display: none;
   }
-  #container-card {
+  #containers-card {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -164,7 +231,7 @@ img {
     display: none;
   }
 
-  .container p {
+  .containers p {
     display: block;
   }
   .next {
@@ -179,7 +246,7 @@ img {
   .left {
     width: 174px;
   }
-  .container {
+  .containers {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -194,5 +261,184 @@ img {
     flex-direction: column;
     align-items: center;
     width: 285px;
+  }
+
+  .left {
+    font-size: 30px;
+  }
+  .right {
+    font-size: 30px;
+    margin: 0px;
+    padding-left: 77px;
+  }
+  i {
+    color: #e4d0b2;
+    background-color: #f1e3cf;
+    border: none;
+    cursor: pointer;
+  }
+  .sens {
+    display: flex;
+    position: relative;
+    top: -150px;
+    width: 281px;
+  }
+  i:hover {
+    background-color: aqua;
+  }
+  i {
+    background-color: #e6d8c0;
+    color: #3a3b2e;
+    border: none;
+    padding: 10px;
+    font-size: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+}
+
+
+/************Aleks footer ***************/
+
+.container1 {
+  /*mettre les element en ligne*/
+ display: grid;
+ grid-template-columns: repeat(6, 1fr);
+ justify-content: space-evenly;
+ background-color: #e4BE86;
+ align-items: center;
+ 
+
+ 
+}
+
+#item_0, #item_2, #item_4  {
+
+font-family: "Roboto";
+font-weight: Bold;
+color:#3a3b2e;
+font-size: 25px;
+text-align: center;
+padding: 6px;
+
+
+}
+
+#item_1, #item_3, #item_5 {
+ color: #3a3b2e;
+ max-width: 100%; /* pour que l'image ne dépasse pas de sa boîte */
+ height: auto;
+ text-align: center;
+ padding: 6px;
+ scale: 0.4;
+
+ 
+}
+
+footer {
+  font-size: 14px;
+  background-color:#3a3b2e;
+  color: #e6d8c0;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  font-family: 'Roboto', sans-serif;
+  height: 65px;
+  
+ 
+ }
+
+.socialMedia {
+  display: flex;
+}
+
+#social_icon {
+ cursor: pointer;
+ transform: scale(0.2);
+ display: flex;
+ flex-direction: row;
+} 
+
+
+
+/************ Aleks mobil **************/
+@media screen and (max-width: 767px) {
+ /*******header*********/
+ header {
+  padding: 5px 5px 10px;
+ }
+
+  .logo {
+       font-size: 30px;
+     }
+   
+   
+  .icons {
+       gap: 8px;
+       font-size: 20px;
+       padding: 5px;
+     }
+
+     .dropdown-menu {
+      padding: 5px;
+     }
+  .content-section {
+         height: 25vh;
+       }
+     
+  .content-container h1 {
+         font-size: 25px;
+         margin-bottom: 20px;
+       }
+     
+       .content-container h3 {
+         font-size: 20px;
+       }
+     
+       button {
+         font-size: 20px;
+         margin-top: 10px;
+       }
+      
+      
+
+           /*******footer*********/
+      footer {
+              font-size: 0.30rem;
+              height: 20px;
+              flex-wrap: nowrap
+          }
+    
+
+      .socialMedia {
+              flex-direction: column; 
+            }
+          
+            #social_icon {
+              scale: 0.3;
+              gap: 5px;
+       }
+}
+/*****partie livraison, sav, avis disparaisse à 424px*/
+       @media screen and (max-width: 424px) {
+       .container1 {
+          display: none;
+      }
+
+      footer {
+          font-size: 0.10rem;
+          height: 7px;
+      }
+
+
+  .socialMedia {
+          flex-direction: column; 
+        }
+      
+        #social_icon {
+          scale: 0.1;
+          gap: 3px;
   }
 }
