@@ -125,7 +125,178 @@ button:hover { /*change la couleur quand on clique dessus */
 } 
 
 /***********************************************************(main Mick)**************************************************/
+/***********************************************************(main)**************************************************/
+#produit {
+  background-color: #e4d0b2;
+}
+img {
+  width: 200px;
+  height: 200px;
+}
 
+#containers-card {
+  background-color: #e4d0b2;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.containers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background-color: #f1e3cf;
+  width: 200px;
+  margin-top: 30px;
+  cursor: pointer;
+  border: black solid 2px;
+}
+
+.containers:hover {
+  background-color: aqua;
+}
+.sens {
+  display: none;
+}
+/******************************(section 2 mick)***********************************************************/
+#section2 {
+  background-color: #f1e3cf;
+  display: flex;
+  justify-content: center;
+  width: auto;
+}
+.img01 > img {
+  overflow-x: visible;
+}
+.img01 {
+  display: flex;
+  overflow-x: visible;
+
+  align-items: center;
+}
+
+.imtex > p {
+  width: 700px;
+  height: 150px;
+  text-wrap: wrap;
+}
+
+/******************************( parti tablette mick)***********************************************************/
+@media screen and (max-width: 768px) {
+  /*.imtex {
+  }*/
+  .img01 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+/*************************************************(parti mobil)*****************************************/
+@media screen and (max-width: 425px) {
+  #section2 {
+    display: none;
+  }
+  img {
+    display: none;
+  }
+  #containers-card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .card {
+    padding-top: 20px;
+  }
+  .card-1 {
+    display: none;
+  }
+  .active {
+    display: block;
+    width: 300px;
+    height: 300px;
+    margin: 0px;
+    padding: 0;
+  }
+  p {
+    display: none;
+  }
+
+  .containers p {
+    display: block;
+  }
+  .next {
+    display: block;
+    display: flex;
+    position: relative;
+    top: 50%;
+  }
+  .material-symbols-outlined {
+    cursor: pointer;
+  }
+  .left {
+    width: 174px;
+  }
+  .containers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 200px;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+  .card1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 285px;
+  }
+
+  .left {
+    font-size: 30px;
+  }
+  .right {
+    font-size: 30px;
+    margin: 0px;
+    padding-left: 77px;
+  }
+  i {
+    color: #e4d0b2;
+    background-color: #f1e3cf;
+    border: none;
+    cursor: pointer;
+  }
+  .sens {
+    display: flex;
+    position: relative;
+    top: -150px;
+    width: 281px;
+  }
+  i:hover {
+    background-color: aqua;
+  }
+  i {
+    background-color: #e6d8c0;
+    color: #3a3b2e;
+    border: none;
+    padding: 10px;
+    font-size: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+}
 
 
 /************Aleks footer ***************/
