@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+  }
+  
+  /************ Aleks header ***************/
+  
+  header {
+      background-color: #3a3b2e; 
+      color: #e6d8c0; 
+      padding: 5px 10px 10px; /* espace interne du header */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: 'Wendy One', sans-serif;
+  }
+  
+     
+  .logo {
+      font-size: 40px; 
+      margin-left: 10px; 
+  }
+  /**********Aleks navbar ******/
+  
+  .icons {
+      cursor: pointer;
+      color: #e6d8c0;
+      display: flex;
+      text-decoration: none;
+      align-items: center;
+      gap: 10px;
+      transform: scale(1.2);
+      padding: 20px;
+      
+    }
+    .icons a:hover {
+      color: #fff; /* quand on clic dessus la couleur change */
+    }
+  
+    /*ul {
+      display:block;
+      position: relative;
+      background-color: #3a3b2e;
+      padding: 10px;
+      top: 100%; /* ajuster le top par rapport au height */
+      /*left: 0;
+      
+      
+  
+  }
+
+  
+  .icons:hover .dropdown-menu {
+      display: block;
+  }
+  
+  .dropdown-menu li {
+      color: #e6d8c0;
+      text-decoration: none;
+      display: block;
+      padding: 10px;
+      overflow: hidden;
+      
+  
+  }
+  
+  .dropdown-menu a:hover {
+      background-color: #ffffff;
+  }*/
+  
+  /************Aleks Main ***************/
+
+
+.contact-form {
+  background-image: url(/img/background\ contact.jpg);
+  
+  background-position: center;
+  text-align: center;
+  padding: 100px 20px;
+  color:#e6d8c0;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 30vh;
+}
+
+form {
+
+    display: grid;
+    grid-template-columns: 200px;
+    grid-template-rows: repeat(4, 25px) ;
+    align-items: first baseline;
+
+}
+
+
+
+  /************Aleks footer ***************/
+
+  footer {
+    font-size: 14px;
+    background-color:#3a3b2e;
+    color: #e6d8c0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    font-family: 'Roboto', sans-serif;
+    height: 65px;
+    
+   
+   }
+
+.socialMedia {
+    display: flex;
+}
+
+#social_icon {
+   cursor: pointer;
+   transform: scale(1);
+   display: flex;
+   flex-direction: row;
+} 
