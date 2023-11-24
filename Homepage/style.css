@@ -2,45 +2,41 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
 /************ Aleks header ***************/
 
 header {
-    background-color: #3a3b2e; 
-    color: #e6d8c0; 
-    padding: 5px 10px 10px; /* espace interne du header */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
+  background-color: #3a3b2e;
+  color: #e6d8c0;
+  padding: 5px 10px 10px; /* espace interne du header */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-   
 .logo {
-    font-size: 40px; 
-    margin-left: 10px; 
-    font-family: 'Wendy One', sans-serif;
+  font-size: 40px;
+  margin-left: 10px;
+  font-family: "Wendy One", sans-serif;
 }
 /**********Aleks navbar ******/
 
 .icons {
-    cursor: pointer;
-    color: #e6d8c0;
-    display: flex;
-    text-decoration: none;
-    align-items: center;
-    gap: 10px;
-    transform: scale(1.2);
-    padding: 20px;
-    
-  }
-  .icons a:hover {
-    color: #fff; /* quand on clic dessus la couleur change */
-  }
+  cursor: pointer;
+  color: #e6d8c0;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  gap: 10px;
+  transform: scale(1.2);
+  padding: 20px;
+}
+.icons a:hover {
+  color: #fff; /* quand on clic dessus la couleur change */
+}
 
-  /*ul {
+/*ul {
     display:block;
     position: relative;
     background-color: #3a3b2e;
@@ -75,7 +71,7 @@ header {
 
 .content-section {
   background-image: url(/img/Header.jpg);
-  background-size: 100% 100%; /*img reduit*/
+  background-size: cover; /*img reduit*/
   background-position: center;
   text-align: center;
   padding: 100px 20px;
@@ -85,51 +81,57 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  height: 30vh;
-  
 }
 
-
 .content-container h1 {
-    font-size: 30px;
-    margin-bottom: 25px;
-    align-self: flex-start;
-
+  font-size: 30px;
+  margin-bottom: 25px;
+  align-self: flex-start;
 }
 
 .content-container h3 {
-    font-size: 25px;
-    font-weight: 100;
-  
-    
-    
+  font-size: 25px;
+  font-weight: 100;
 }
 
 button {
-    background-color: #e6d8c0;
-    color: #3a3b2e;
-    border: 1px;
-    border-radius: 30px;
-    padding: 10px; 
-    font-size: 30px; 
-    margin-top: 20px;
-    cursor: pointer; /*chage de courseur */
-    align-self: flex-start;
+  background-color: #e6d8c0;
+  color: #3a3b2e;
+  border: 1px;
+  border-radius: 30px;
+  padding: 10px;
+  font-size: 30px;
+  margin-top: 20px;
+  cursor: pointer; /*chage de courseur */
+  align-self: flex-start;
 }
 
-button:hover { /*change la couleur quand on clique dessus */
-    background-color: #e6d8c0;
-    border:#3a3b2e ;
-    background-color: #e4BE86 ;
-    transform: scale(1.05); /*bouton s'agrandi*/
-
-} 
+button:hover {
+  /*change la couleur quand on clique dessus */
+  background-color: #e6d8c0;
+  border: #3a3b2e;
+  background-color: #e4be86;
+  transform: scale(1.05); /*bouton s'agrandi*/
+}
 
 /***********************************************************(main Mick)**************************************************/
 /***********************************************************(main)**************************************************/
-#produit {
+main {
   background-color: #e4d0b2;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 90px - 200px);
 }
+
+/******************************(section 1 mick)***********************************************************/
+
+#produit {
+  display: flex;
+  flex-wrap: wrap;
+
+  height: auto;
+}
+
 img {
   width: 200px;
   height: 200px;
@@ -174,6 +176,8 @@ img {
   display: flex;
   justify-content: center;
   width: auto;
+  height: 384px;
+  flex-wrap: wrap;
 }
 .img01 > img {
   overflow-x: visible;
@@ -181,7 +185,6 @@ img {
 .img01 {
   display: flex;
   overflow-x: visible;
-
   align-items: center;
 }
 
@@ -191,19 +194,43 @@ img {
   text-wrap: wrap;
 }
 
+/*******************************(section 3 mick)********************************************************************************/
+.section3 {
+  display: flex;
+  flex-direction: column-reverse;
+}
 /******************************( parti tablette mick)***********************************************************/
 @media screen and (max-width: 768px) {
-  /*.imtex {
-  }*/
   .img01 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   }
+  .section2 {
+    justify-content: flex-end;
+  }
 }
 /*************************************************(parti mobil)*****************************************/
 @media screen and (max-width: 425px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .content-section {
+    padding: 0px;
+  }
+  .content-section h3 {
+    display: none;
+  }
+  main {
+    height: calc(100vh - 90px - 200px);
+    flex-direction: row;
+    align-content: stretch;
+    align-items: stretch;
+    justify-content: center;
+  }
+
   #section2 {
     display: none;
   }
@@ -297,150 +324,151 @@ img {
     margin-top: 20px;
     cursor: pointer;
   }
+  .section3 {
+    display: none;
+  }
 }
-
 
 /************Aleks footer ***************/
 
+#item_0,
+#item_2,
+#item_4 {
+  font-family: "Roboto";
+  font-weight: Bold;
+  color: #3a3b2e;
+  font-size: 25px;
+  text-align: center;
+  padding: 6px;
+}
+
+#item_1,
+#item_3,
+#item_5 {
+  color: #3a3b2e;
+  max-width: 100%; /* pour que l'image ne dépasse pas de sa boîte */
+  height: auto;
+  text-align: center;
+  padding: 6px;
+  width: 90px;
+}
+
 .container1 {
-    /*mettre les element en ligne*/
-   display: grid;
-   grid-template-columns: repeat(6, 1fr);
-   justify-content: space-evenly;
-   background-color: #e4BE86;
-   align-items: center;
-   
-  
-   
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-
-#item_0, #item_2, #item_4  {
-
-font-family: "Roboto";
-font-weight: Bold;
-color:#3a3b2e;
-font-size: 25px;
-text-align: center;
-padding: 6px;
-
-
-}
-
-#item_1, #item_3, #item_5 {
-   color: #3a3b2e;
-   max-width: 100%; /* pour que l'image ne dépasse pas de sa boîte */
-   height: auto;
-   text-align: center;
-   padding: 6px;
-   scale: 0.4;
-
-   
-}
-
 footer {
-    font-size: 14px;
-    background-color:#3a3b2e;
-    color: #e6d8c0;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    font-family: 'Roboto', sans-serif;
-    height: 65px;
-    
-   
-   }
-
-.socialMedia {
-    display: flex;
+  font-size: 14px;
+  background-color: #3a3b2e;
+  color: #e6d8c0;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  font-family: "Roboto", sans-serif;
+  height: 65px;
 }
-
-#social_icon {
-   cursor: pointer;
-   transform: scale(0.2);
-   display: flex;
-   flex-direction: row;
-} 
-
-
+footer img {
+  height: 50px;
+  width: 50px;
+}
+.socialMedia {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  width: 100%;
+}
 
 /************ Aleks mobil **************/
-@media screen and (max-width: 767px) {
-   /*******header*********/
-   header {
+@media screen and (max-width: 768px) {
+  /*******header*********/
+  header {
     padding: 5px 5px 10px;
-   }
-
-    .logo {
-         font-size: 30px;
-       }
-     
-     
-    .icons {
-         gap: 8px;
-         font-size: 20px;
-         padding: 5px;
-       }
-
-       .dropdown-menu {
-        padding: 5px;
-       }
-    .content-section {
-           height: 25vh;
-         }
-       
-    .content-container h1 {
-           font-size: 25px;
-           margin-bottom: 20px;
-         }
-       
-         .content-container h3 {
-           font-size: 20px;
-         }
-       
-         button {
-           font-size: 20px;
-           margin-top: 10px;
-         }
-        
-        
-
-             /*******footer*********/
-        footer {
-                font-size: 0.30rem;
-                height: 20px;
-                flex-wrap: nowrap
-            }
-      
-
-        .socialMedia {
-                flex-direction: column; 
-              }
-            
-              #social_icon {
-                scale: 0.3;
-                gap: 5px;
-         }
-}
-/*****partie livraison, sav, avis disparaisse à 424px*/
-         @media screen and (max-width: 424px) {
-         .container1 {
-            display: none;
-        }
-
-        footer {
-            font-size: 0.10rem;
-            height: 7px;
-        }
-  
-
-    .socialMedia {
-            flex-direction: column; 
-          }
-        
-          #social_icon {
-            scale: 0.1;
-            gap: 3px;
-    }
   }
+
+  .logo {
+    font-size: 30px;
+  }
+
+  .icons {
+    gap: 8px;
+    font-size: 20px;
+    padding: 5px;
+  }
+
+  .dropdown-menu {
+    padding: 5px;
+  }
+  .content-section {
+    height: 25vh;
+  }
+
+  .content-container h1 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  .content-container h3 {
+    font-size: 20px;
+  }
+
+  button {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  /**********************(main)*************************************/
+  main {
+    height: calc(100vh - 195.5px - 55px - 49px);
+  }
+
+  /********************(section3)***************************************************/
+  .container1 {
+    height: 155px;
+    background-color: #e4d0b2;
+  }
+  #item_0,
+  #item_2,
+  #item_4 {
+    font-family: "Roboto";
+    font-weight: Bold;
+    color: #3a3b2e;
+    font-size: 15px;
+    text-align: center;
+    padding: 6px;
+  }
+
+  #item_1,
+  #item_3,
+  #item_5 {
+    color: #3a3b2e;
+    max-width: 100%; /* pour que l'image ne dépasse pas de sa boîte */
+    height: auto;
+    text-align: center;
+    padding: 6px;
+    width: 70px;
+  }
+
+  /*******footer*********/
+  footer {
+    position: relative;
+    bottom: -300px;
+  }
+  footer img {
+    height: 50px;
+    width: 50px;
+  }
+}
+/******************partie livraison, sav, avis disparaisse à 424px******************/
+@media screen and (max-width: 425px) {
+  /********************************(footer)**********************/
+  footer {
+    position: relative;
+    bottom: 0px;
+  }
+  .auteur p {
+    display: block;
+  }
+}
