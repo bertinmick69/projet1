@@ -25,7 +25,7 @@
 
   }
 
-  .logo a : hover {
+  .logo a:hover {
     cursor: pointer;
     color: #fff; /* quand on clic dessus la couleur change */
   }
@@ -85,7 +85,7 @@
 
 
 .contact-form {
-  background-image: url(/img/background\ contact.jpg);
+  background-image: url(/img/cover\ contact.png);
   background-position: center;
   text-align: center;
   padding: 100px 20px;
