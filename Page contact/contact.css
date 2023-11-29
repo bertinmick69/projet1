@@ -50,36 +50,7 @@
       color: #fff; /* quand on clic dessus la couleur change */
     }
   
-    /*ul {
-      display:block;
-      position: relative;
-      background-color: #3a3b2e;
-      padding: 10px;
-      top: 100%; /* ajuster le top par rapport au height */
-      /*left: 0;
-      
-      
   
-  }
-
-  
-  .icons:hover .dropdown-menu {
-      display: block;
-  }
-  
-  .dropdown-menu li {
-      color: #e6d8c0;
-      text-decoration: none;
-      display: block;
-      padding: 10px;
-      overflow: hidden;
-      
-  
-  }
-  
-  .dropdown-menu a:hover {
-      background-color: #ffffff;
-  }*/
   
   /************Aleks Main ***************/
 
@@ -94,7 +65,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 70vh; /* hauteur minimale */
+  min-height: 70vh;
   object-fit: cover;
   background-size: cover; /* ajuster la taille de l'image d'arrière-plan */
 }

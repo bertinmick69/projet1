@@ -76,6 +76,7 @@
   main {
    
     background-color: #F5E1C3;
+    
   }
   
   .product-boxes {
@@ -153,7 +154,7 @@
     flex-direction: row;
   }
   
-  /*********** media queries*****/
+  /*********** media queries tablette*****/
 
   @media screen and (max-width: 768px) {
   
@@ -208,3 +209,4 @@
       flex-direction: column; 
     }
   }
+}
