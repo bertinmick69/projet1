@@ -21,52 +21,55 @@ header {
   font-family: "Wendy One", sans-serif;
 }
 /**********Aleks navbar ******/
+.hors-menu {
+  height: 20px;
+}
+.sous-menu {
+  list-style: none;
+  right: 55px;
+  top: 10px;
+  text-align: center;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.sous-menu > li {
+  border: solid #e4be86 2px;
+  border-radius: 10px;
+  width: 146px;
+  color: black;
+  padding: 10px;
+}
 
-.icons {
+i {
+  height: 35px;
+  width: 40px;
+  font-size: 24px;
+}
+
+.icon {
   cursor: pointer;
   color: #e6d8c0;
   display: flex;
   text-decoration: none;
   align-items: center;
   gap: 10px;
-  transform: scale(1.2);
-  padding: 20px;
+  list-style: none;
 }
-.icons a:hover {
-  color: #fff; /* quand on clic dessus la couleur change */
+.icon > li:hover {
+  color: #fff;
+  cursor: pointer;
 }
-
-/*ul {
-    display:block;
-    position: relative;
-    background-color: #3a3b2e;
-    padding: 10px;
-    top: 100%; /* ajuster le top par rapport au height 
-    left: 0;
-    
-    
-
+.sous-menu > li:hover {
+  background-color: #fff;
 }
 
-.icons:hover .dropdown-menu {
-    display: block;
+li {
+  font-size: 12px;
 }
-
-.dropdown-menu li {
-    color: #e6d8c0;
-    text-decoration: none;
-    display: block;
-    padding: 10px;
-    overflow: hidden;
-    
-
+a {
+  text-decoration: none;
+  font-family: "Wendy One", sans-serif;
 }
-
-.dropdown-menu a:hover {
-    background-color: #ffffff;
-}
-*/
-
 /************Aleks header ***************/
 
 .content-section {
@@ -111,7 +114,6 @@ button:hover {
   background-color: #e6d8c0;
   border: #3a3b2e;
   background-color: #e4be86;
-  transform: scale(1.05); /*bouton s'agrandi*/
 }
 
 /***********************************************************(main Mick)**************************************************/
@@ -161,11 +163,11 @@ img {
   width: 200px;
   margin-top: 30px;
   cursor: pointer;
-  border: black solid 2px;
+  border-radius: 10px;
 }
 
 .containers:hover {
-  background-color: aqua;
+  background-color: white;
 }
 .sens {
   display: none;
@@ -189,9 +191,8 @@ img {
 }
 
 .imtex > p {
-  width: 700px;
-  height: 150px;
   text-wrap: wrap;
+  background-color: #f1e3cf;
 }
 
 /*******************************(section 3 mick)********************************************************************************/
@@ -206,13 +207,18 @@ img {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    height: 388px;
   }
   .section2 {
     justify-content: flex-end;
   }
 }
 /*************************************************(parti mobil)*****************************************/
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
+  .hors-menu {
+    display: none;
+  }
+
   header {
     flex-wrap: wrap;
     justify-content: center;
@@ -224,7 +230,6 @@ img {
     display: none;
   }
   main {
-    height: calc(100vh - 90px - 200px);
     flex-direction: row;
     align-content: stretch;
     align-items: stretch;
@@ -312,9 +317,7 @@ img {
     top: -150px;
     width: 281px;
   }
-  i:hover {
-    background-color: aqua;
-  }
+
   i {
     background-color: #e6d8c0;
     color: #3a3b2e;
@@ -357,6 +360,7 @@ img {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  height: 186px;
 }
 footer {
   font-size: 14px;
@@ -382,7 +386,7 @@ footer img {
   width: 100%;
 }
 
-/************ Aleks mobil **************/
+/************ Aleks tablette **************/
 @media screen and (max-width: 768px) {
   /*******header*********/
   header {
@@ -421,10 +425,19 @@ footer img {
   }
   /**********************(main)*************************************/
   main {
-    height: calc(100vh - 195.5px - 55px - 49px);
+    height: 100vh;
   }
-
+  /**********************(section 2 )****************************************/
+  .section2 {
+    width: 434px;
+  }
+  .imtext > p {
+    width: 406px;
+  }
   /********************(section3)***************************************************/
+  .section3 {
+    height: 70px;
+  }
   .container1 {
     height: 155px;
     background-color: #e4d0b2;
@@ -454,21 +467,33 @@ footer img {
   /*******footer*********/
   footer {
     position: relative;
-    bottom: -300px;
+    bottom: auto;
   }
   footer img {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
   }
 }
 /******************partie livraison, sav, avis disparaisse à 424px******************/
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
   /********************************(footer)**********************/
-  footer {
+  /* footer {
     position: relative;
     bottom: 0px;
-  }
+  }*/
   .auteur p {
     display: block;
+  }
+}
+/***********************************************************************/
+@media screen and (max-width: 880px) {
+  main {
+    height: 100vh;
+  }
+  .section3 {
+    height: 300px;
+  }
+  .section2 {
+    height: 600px;
   }
 }
