@@ -3,51 +3,79 @@
     padding: 0;
   }
   
-  /************ Aleks header ***************/
+  /************  header ***************/
   
   header {
-    background-color: #3a3b2e;
-    color: #e6d8c0;
+    background-color: #3a3b2e; 
+    color: #e6d8c0; 
     padding: 5px 10px 10px; /* espace interne du header */
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: 'Wendy One', sans-serif;
-  }
-  
-  .logo {
-    font-size: 40px;
-    margin-left: 10px;
+}
+
+.logo {
+    font-size: 40px; 
+    margin-left: 10px; 
     text-decoration: none;
     color: #e6d8c0;
-  }
-  
-  .logo a:hover {
-    cursor: pointer;
-    color: #fff; /* quand on clic dessus la couleur change */
-  }
-  
-  /**********Aleks navbar ******/
-  
-  .icons {
-    display: flex;
-  }
-  
-  .icons a {
-    cursor: pointer;
-    color: #e6d8c0;
-    display: flex;
-    text-decoration: none;
-    align-items: center;
-    gap: 1px;
-    transform: scale(1.4);
-    padding: 20px;
-  }
-  
-  .icons a:hover {
-    color: #fff; /* quand on clic dessus la couleur change */
-  }
-  
+    
+}
+
+.logo a:hover {
+  cursor: pointer;
+  color: #fff; /* quand on clic dessus la couleur change */
+}
+.hors-menu {
+  height: 20px;
+}
+.sous-menu {
+  list-style: none;
+  right: 55px;
+  top: 10px;
+  text-align: center;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.sous-menu > li {
+  border: solid #E6D8C0 2px;
+  background-color: #E6D8C0;
+  width: 146px;
+  color: #E6D8C0;
+  font-family: 'Wendy One', sans-serif;
+  padding: 10px;
+}
+
+i {
+  height: 35px;
+  width: 40px;
+  font-size: 24px;
+}
+
+.icon {
+  cursor: pointer;
+  color: #e6d8c0;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+}
+.icon > li:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+li {
+  font-size: 12px;
+}
+a {
+  text-decoration: none;
+  color: #3a3b2e;
+
+}
+
   /************Aleks Main ***************/
   .content-section {
     background-color: #F5E1C3;
