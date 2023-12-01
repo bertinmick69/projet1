@@ -1,4 +1,3 @@
-
 const menu = document.querySelector(".fa-bars");
 const sousMenu = document.querySelector(".sous-menu");
 
