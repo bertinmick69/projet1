@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /************  header ***************/
+  
+  header {
+    background-color: #3a3b2e; 
+    color: #e6d8c0; 
+    padding: 5px 10px 10px; /* espace interne du header */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Wendy One', sans-serif;
+}
+
+.logo {
+    font-size: 40px; 
+    margin-left: 10px; 
+    text-decoration: none;
+    color: #e6d8c0;
+    
+}
+
+.logo a:hover {
+  cursor: pointer;
+  color: #fff; /* quand on clic dessus la couleur change */
+}
+.hors-menu {
+  height: 20px;
+}
+.sous-menu {
+  list-style: none;
+  right: 55px;
+  top: 10px;
+  text-align: center;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.sous-menu > li {
+  border: solid #E6D8C0 2px;
+  background-color: #E6D8C0;
+  width: 146px;
+  color: #E6D8C0;
+  font-family: 'Wendy One', sans-serif;
+  padding: 10px;
+}
+
+i {
+  height: 35px;
+  width: 40px;
+  font-size: 24px;
+}
+
+.icon {
+  cursor: pointer;
+  color: #e6d8c0;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+}
+.icon > li:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+li {
+  font-size: 12px;
+}
+a {
+  text-decoration: none;
+  color: #3a3b2e;
+
+}
+
+  /************Aleks Main ***************/
+  .content-section {
+    background-color: #F5E1C3;
+    padding: 40px; 
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .content-container {
+    max-width: 800px;
+    margin: 0 auto; 
+  }
+  
+  h1 {
+    color: #3a3b2e; 
+    font-size: 36px;
+    margin: 30px;
+  }
+  
+  h3 {
+    color: #3a3b2e; 
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  main {
+   
+    background-color: #F5E1C3;
+    
+  }
+  
+  .product-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+  
+  .product-box {
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+    width: 200px;
+    color: #3A3B2E;
+  }
+
+  .product-box h4{
+    margin: 20px;
+    
+  }
+
+  .product-box p {
+    margin: 20px;
+    
+  }
+  
+  .product-box img {
+    max-width: 100%;
+    border-radius: 8px;
+    height: 200px;
+  }
+  
+
+  .buy-button {
+    background-color: #F5E1C3;
+    color: #3A3B2E;
+    padding: 10px 15px;
+    border: 1px solid #3A3B2E;
+    border-radius: 5px;
+    width: 150px;
+    cursor: pointer;
+    margin: 15px;
+  }
+  
+  .buy-button:hover {
+    background-color: #f2d29a; 
+  }
+  /************Aleks footer ***************/
+  
+  footer {
+    font-size: 14px;
+    background-color: #3a3b2e;
+    color: #e6d8c0;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    font-family: 'Roboto', sans-serif;
+    height: 65px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .socialMedia {
+    display: flex;
+  }
+  
+  #social_icon {
+    cursor: pointer;
+    transform: scale(1);
+    display: flex;
+    flex-direction: row;
+  }
+  
+  /*********** media queries tablette*****/
+
+  @media screen and (max-width: 768px) {
+  
+    header {
+      padding: 10px; 
+    }
+  
+    .logo {
+      font-size: 30px; 
+    }
+  
+    .icons a {
+      padding: 10px; 
+    }
+  
+    .content-section {
+      padding: 20px; 
+    }
+  
+    h1 {
+      font-size: 28px;
+      margin: 20px; 
+    }
+  
+    h3 {
+      font-size: 14px; 
+      margin: 15px; 
+    }
+  
+    .product-box {
+      width: 100%; 
+    }
+
+    .product-box h4 {
+        font-size: 28px; 
+      }
+
+      .product-box p {
+        font-size: 28px; 
+      } 
+  
+    .product-box img {
+      height: 300px;
+      width: 300px;
+    }
+    .buy-button {
+      width: 300px; 
+      height: 50px;
+      font-size: 30px;
+  
+    footer {
+      flex-direction: column; 
+    }
+  }
+}
